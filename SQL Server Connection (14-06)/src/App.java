@@ -1,24 +1,21 @@
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.sql.*;
 
 public class App {
 	public static void main(String[] args) throws Exception {
-		String connectionUrl = "jdbc:sqlserver://localhost;databaseName=SampleDatabase;user=testeLogon;password=sample123";
+		String connectionUrl = "jdbc:sqlserver://localhost\\sqlexpress:1433;databaseName=SampleDatabase;user=testLogon;password=sample123";
 		String insertString = "INSERT INTO Pessoa (id, nome, idade) VALUES (?, ?, ?)";
 
 		try (
-			Connection connection = DriverManager.getConnection(connectionUrl);
-			PreparedStatement statement = connection.prepareStatement(insertString);
+			Connection con = DriverManager.getConnection(connectionUrl);
+			PreparedStatement stmt = con.prepareStatement(insertString);
 		) {
 			Pessoa p1 = new Pessoa(1, "Maria", 50);
 
-			statement.setInt(1, p1.getId());
-			statement.setString(2, p1.getNome());
-			statement.setInt(3, p1.getIdade());
+			stmt.setInt(1, p1.getId());
+			stmt.setString(2, p1.getNome());
+			stmt.setInt(3, p1.getIdade());
 
-			statement.executeUpdate();
+			stmt.executeUpdate();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}

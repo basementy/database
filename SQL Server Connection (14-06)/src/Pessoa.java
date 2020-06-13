@@ -1,7 +1,9 @@
 public class Pessoa {
-	private int id;
+  private int id;
 	private String nome;
 	private int idade;
+
+	public Pessoa() { }
 
 	public Pessoa(int id, String nome, int idade) {
 		this.id = id;
