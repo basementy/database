@@ -1,22 +1,10 @@
 public class Pessoa {
-  private int id;
 	private String nome;
 	private int idade;
 
-	public Pessoa() { }
-
-	public Pessoa(int id, String nome, int idade) {
-		this.id = id;
+	public Pessoa(String nome, int idade) {
 		this.nome = nome;
 		this.idade = idade;
-	}
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
 	}
 
 	public String getNome() {
@@ -37,6 +25,6 @@ public class Pessoa {
 
 	@Override
 	public String toString() {
-		return "Pessoa [id=" + id + ", nome=" + nome + ", idade=" + idade + "]";
+		return "Pessoa [nome=" + nome + ", idade=" + idade + "]";
 	}
 }
