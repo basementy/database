@@ -2,7 +2,7 @@ import java.sql.*;
 
 public class App {
 	public static void main(String[] args) throws Exception {
-		String connectionUrl = "jdbc:sqlserver://localhost\\sqlexpress:1433;databaseName=SampleDatabase;user=testLogon;password=sample123";
+		String connectionUrl = "jdbc:sqlserver://localhost\\sqlexpress:1433;databaseName=SampleDatabase;user=testeLogon;password=sample123";
 		String insertString = "INSERT INTO Pessoa (id, nome, idade) VALUES (?, ?, ?)";
 
 		try (
