@@ -161,7 +161,7 @@ public class Database {
       scan.nextLine();
     } catch (SQLException e) {
       e.printStackTrace();
-      JOptionPane.showMessageDialog(null, "Erro ao tentar inserir (Visualize o console para mais detalhes)");
+      JOptionPane.showMessageDialog(null, "Erro ao tentar buscar (Visualize o console para mais detalhes)");
       scan.nextLine();
     }
   }
