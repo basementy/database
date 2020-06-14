@@ -34,6 +34,6 @@ public class Client {
 
 	@Override
 	public String toString() {
-		return "Client [id=" + this.id + ", name=" + this.name + ", company=" + this.company + "]";
+		return "Client [id = " + this.id + ", name = " + this.name + ", company = " + this.company + "]";
 	}
 }

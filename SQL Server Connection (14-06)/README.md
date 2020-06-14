@@ -1,14 +1,11 @@
-## Getting Started
+# SQL + JDBC (N2)
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Esse projeto serve para validar a N2, uma simples conexão entre Java e SQL Server.
 
-## Folder Structure
+## Conexão
 
-The workspace contains two folders by default, where:
+Para realizar a conexão, deve-se primeiro criar um banco e um usuário. Após isso modificar o construtor `Database` para que seja possível realizar a conexão de forma efetiva, passando o nome do banco, o usuário e a senha.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Tabelas
 
-## Dependency Management
-
-The `JAVA DEPENDENCIES` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-pack/blob/master/release-notes/v0.9.0.md#work-with-jar-files-directly).
+Após ter realizado a conexão, deve-se então criar as tabelas que serão usadas. Ambas estão localizadas em `src/scripts`.

@@ -34,6 +34,6 @@ public class Sale {
 
   @Override
 	public String toString() {
-		return "Sale [id=" + this.id + ", client_id=" + this.clientId + ", product=" + this.product + "]";
+		return "Sale [id = " + this.id + ", client_id = " + this.clientId + ", product = " + this.product + "]";
 	}
 }
