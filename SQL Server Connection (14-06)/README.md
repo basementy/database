@@ -9,3 +9,7 @@ Para realizar a conexão, deve-se primeiro criar um banco e um usuário. Após i
 ## Tabelas
 
 Após ter realizado a conexão, deve-se então criar as tabelas que serão usadas. Ambas estão localizadas em `src/scripts`.
+
+## Consultas
+
+Todas as consultas, sejam para `INSERT` ou `SELECT` estão localizadas dentro da classe `Database` como métodos, algumas utilizam do console para printar resultados e outras utilizam do `JOptionPane` para inserção no banco.
