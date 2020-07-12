@@ -1,0 +1,7 @@
+
+CREATE TABLE Product (
+	id INT NOT NULL IDENTITY(1, 1) PRIMARY KEY,
+	category_id INT NOT NULL FOREIGN KEY REFERENCES Category(id),
+	name VARCHAR(50) NOT NULL,
+	price INT NOT NULL,
+);
